@@ -5,38 +5,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Info Penting - Presensi Sambas</title>
 <style>
-:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg1:#fff3e6;--bg2:#e9d8ff;--ink:#2a1a4a;--card:#fff;--muted:#5b4a7a;--acc:#f26a1b;--pur:#5b2ea6}
-:root:not([data-theme="light"]){}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg1:#2a1608;--bg2:#1f1236;--ink:#f6ecff;--card:#2b2140;--muted:#c9b8e8}}
-:root[data-theme="dark"]{--bg1:#2a1608;--bg2:#1f1236;--ink:#f6ecff;--card:#2b2140;--muted:#c9b8e8}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--teal:#00a896;--deep:#05806f;--dark:#04594d;--orange:#ffa500;--ink:#0f3d38;--muted:#4f6f6a}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 *{box-sizing:border-box}
-body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:linear-gradient(160deg,var(--bg1),var(--bg2));min-height:100vh;display:flex;justify-content:center}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#fff;min-height:100vh;display:flex;justify-content:center;background:radial-gradient(circle at 0 0,var(--orange) 0,rgba(255,165,0,0) 45%),linear-gradient(160deg,var(--teal),var(--deep))}
 .wrap{width:100%;max-width:430px;padding:28px 20px 0;text-align:center;overflow:hidden}
-.logo{font-weight:800;letter-spacing:.5px;color:var(--pur);font-size:14px}
-.logo span{color:var(--acc)}
-h1{margin:14px 0 12px;font-size:44px;line-height:1;font-weight:900;color:#fff;background:linear-gradient(90deg,var(--acc),#d4308f);display:inline-block;padding:8px 22px;border-radius:14px;transform:rotate(-2deg);box-shadow:0 6px 0 var(--pur)}
-p.msg{font-size:16px;line-height:1.55;margin:18px 4px}
-.date{display:inline-block;background:var(--acc);color:#fff;font-weight:800;padding:2px 12px;border-radius:8px;margin:2px 0}
-.pill{background:var(--pur);color:#fff;border-radius:999px;padding:8px 14px;font-size:13px;margin:18px 0 12px}
+.logo{font-weight:800;letter-spacing:1px;font-size:14px;color:#fff}
+.logo span{color:#ffd27a}
+h1{margin:14px 0 12px;font-size:44px;line-height:1;font-weight:900;color:#fff;background:var(--orange);display:inline-block;padding:8px 22px;border-radius:14px;transform:rotate(-2deg);box-shadow:0 6px 0 var(--dark);text-shadow:0 2px 0 rgba(0,0,0,.18)}
+p.msg{font-size:16px;line-height:1.6;margin:18px 4px}
+.date{display:inline-block;background:#fff;color:var(--dark);font-weight:800;padding:2px 12px;border-radius:8px;margin:2px 0}
+.pill{background:var(--dark);color:#fff;border-radius:999px;padding:9px 14px;font-size:13px;margin:18px 0 12px}
 .pill b{color:#ffd27a}
-.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;text-align:left}
-.card{background:var(--card);border-radius:14px;padding:14px;box-shadow:0 4px 14px rgba(60,20,110,.15);min-width:0}
-.card .ic{font-size:26px}
-.card h3{margin:8px 0 2px;font-size:14px}
-.card small{color:var(--muted);font-size:12px;word-break:break-all}
-.phone{margin:26px auto 0;width:78%;background:#1c1530;border-radius:34px 34px 0 0;padding:12px 10px 0;box-shadow:0 -6px 24px rgba(0,0,0,.25)}
-.screen{background:#f6f3fb;color:#2a1a4a;border-radius:24px 24px 0 0;padding:12px;text-align:left;min-height:210px}
+.card{background:#fff;color:var(--ink);border-radius:18px;padding:16px;box-shadow:0 8px 22px rgba(0,50,45,.3);text-align:center}
+.card .ic{font-size:28px}
+.card h3{margin:6px 0 2px;font-size:17px;color:var(--deep)}
+.card small{color:var(--muted);font-size:13px}
+.foot{font-size:12px;margin:14px 0 0;opacity:.95}
+.phone{margin:24px auto 0;width:78%;background:#12302c;border-radius:34px 34px 0 0;padding:12px 10px 0;box-shadow:0 -6px 24px rgba(0,0,0,.25)}
+.screen{background:#fff;color:var(--ink);border-radius:24px 24px 0 0;padding:12px;text-align:left;min-height:210px}
 .bar{display:flex;justify-content:space-between;font-size:11px;font-weight:700;margin-bottom:10px}
-.hdr{background:linear-gradient(90deg,var(--acc),#d4308f);color:#fff;border-radius:12px;padding:10px;font-weight:800;font-size:14px}
-.hdr small{display:block;font-weight:500;font-size:11px;opacity:.9}
+.hdr{background:linear-gradient(90deg,var(--teal),var(--deep));color:#fff;border-radius:14px;padding:10px;font-weight:800;font-size:14px}
+.hdr small{display:block;font-weight:500;font-size:11px;opacity:.95}
 .clock{text-align:center;font-size:30px;font-weight:800;margin:12px 0 2px}
-.sub{text-align:center;font-size:11px;color:#6b5a8a;margin-bottom:10px}
+.sub{text-align:center;font-size:11px;color:var(--muted);margin-bottom:10px}
 .btns{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.btns div{border-radius:10px;padding:9px 0;text-align:center;color:#fff;font-weight:700;font-size:12px;background:#9a8fb3}
-.btns div:first-child{background:#2e9e5b}
-.note{margin-top:10px;background:#fff4d6;border-radius:8px;padding:6px 8px;font-size:11px;color:#7a5200}
-.foot{font-size:11px;color:var(--muted);padding:10px 0 0}
+.btns div{border-radius:12px;padding:9px 0;text-align:center;color:#fff;font-weight:700;font-size:12px;background:#a9bdb9}
+.btns div:first-child{background:var(--teal)}
+.note{margin-top:10px;background:#fff1cf;border-radius:8px;padding:6px 8px;font-size:11px;color:#7a4b00}
 </style>
 </head>
 <body>
@@ -45,8 +41,8 @@ p.msg{font-size:16px;line-height:1.55;margin:18px 4px}
   <h1>Info Penting!</h1>
   <p class="msg">Layanan <b>Website Presensi Sambas</b> sedang dalam maintenance mulai <span class="date">3 Oktober 2026</span> sampai waktu yang belum bisa ditentukan.<br>Mohon maaf atas ketidaknyamanannya.</p>
   <div class="pill">Untuk sementara, <b>Bapak/Ibu Pegawai</b> dapat menggunakan:</div>
-  <div class="cards" style="grid-template-columns:1fr"><div class="card" style="text-align:center"><div class="ic">👆</div><h3>Fingerprint</h3><small>atau sesuai ketentuan yayasan</small></div></div>
-  <p class="foot" style="margin:14px 0 0">Terima kasih atas pengertian Bapak/Ibu.</p>
+  <div class="card"><div class="ic">👆</div><h3>Fingerprint</h3><small>atau sesuai ketentuan yayasan</small></div>
+  <p class="foot">Terima kasih atas pengertian Bapak/Ibu.</p>
   <div class="phone"><div class="screen">
     <div class="bar"><span>06:09</span><span>📶 🔋</span></div>
     <div class="hdr">Presensi Sambas<small>Sedang maintenance</small></div>
